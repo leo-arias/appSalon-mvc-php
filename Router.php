@@ -23,7 +23,7 @@ class Router
             session_start();
         }
 
-        $currentUrl = strtok($_SERVER['REQUEST_URI'], '?') ?? '/'; 
+        $currentUrl = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
