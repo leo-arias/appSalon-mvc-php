@@ -65,7 +65,7 @@ class Email {
 
         // Configurar el contenido del email
         $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+        $mail->addAddress($this->email);
         $mail->Subject = 'Reestablece tu contraseña';
 
         // Set HTML
